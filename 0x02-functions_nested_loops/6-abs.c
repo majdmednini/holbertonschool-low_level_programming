@@ -1,7 +1,7 @@
 #include "main.h"
-/*
- * _abs - absolu
- * @n: integer
+/**
+ *_abs - absolu
+ *@n: integer
  * Return: abs(n)
  */
 int _abs(int n)
