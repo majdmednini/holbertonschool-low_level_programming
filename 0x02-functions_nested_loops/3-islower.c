@@ -4,16 +4,10 @@
  *
  * Return: Always 0.
  */
-void int _islower(int c)
+int _islower(int c)
 {
-char str = 'a';
-if(islower(str) == 0) 
-{
-	printf("0");
-}
-
-	else 
-{
-	printf("1"):
-}
+if (c < 'z' && c > 'a')
+return (1);
+else
+return (0);
 }
