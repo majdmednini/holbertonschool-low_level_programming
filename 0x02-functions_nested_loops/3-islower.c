@@ -1,8 +1,7 @@
-#include "main.h"
 /**
- * print_alphabet - prints prints the alphabet, in lowercase
+ * test_islower - Test the _islower function
  *
- * Return: Always 0.
+ * @n: Number to pass to _islower function
  */
 int _islower(int c)
 {
