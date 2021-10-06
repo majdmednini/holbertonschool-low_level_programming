@@ -7,7 +7,7 @@
  */
 int _isalpha(int c)
 {
-case 'A' ... 'Z' && 'a' ... 'z'
+	case 'A' ... 'Z' && 'a' ... 'z':
 return (1);
 else
 return (0);
