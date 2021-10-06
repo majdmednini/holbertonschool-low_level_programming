@@ -7,8 +7,12 @@
  */
 int _isalpha(int c)
 {
-	case 'A' ... 'Z' && 'a' ... 'z':
+case 'A' ... 'Z':
 return (1);
-else
+break;
+case 'a' ... 'z':
+return (1);
+break;
+default:
 return (0);
 }
