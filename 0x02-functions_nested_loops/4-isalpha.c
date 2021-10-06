@@ -5,7 +5,7 @@
  * 
  * Return: 1 (Success)
  */
-int _isalpha(int c);
+int _isalpha(int c)
 {
 if (c < 'z' && c > 'a')
 return (1);
