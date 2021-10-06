@@ -1,10 +1,10 @@
-#include "main.h"
+#include "holberton.h"
+
 /**
- * _islower - Test the _islower function
+ * _islower - checks for lowercase character
+ * @c: The character to check
  *
- * @c: Number to pass to _islower function
- * 
- * Return - always 0 
+ * Return: 1 (Success)
  */
 int _islower(int c)
 {
