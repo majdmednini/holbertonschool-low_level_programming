@@ -7,11 +7,6 @@
  * Return: Always 0.
  */
 void reset_to_98(int *n)
-{ 
-	int *p = &n;
-	p = 402;
 {
-	printf("n=%d\n", n);
-	return (0);
-}
+       *n = 98 
 }
