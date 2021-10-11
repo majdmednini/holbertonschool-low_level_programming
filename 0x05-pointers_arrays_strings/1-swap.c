@@ -9,7 +9,8 @@
 void swap_int(int *a, int *b)
 {
 {
-printf("%d, %d\n", *a, *b);
+*a = %d, a
+*b = %d, b
 }
 {
 swap_int(&*a, &*b);
