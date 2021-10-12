@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * int _strlen - check the code
+ * _strlen - check the code
+ *@0: The character to check
  *@s: The character to check
- *@: The character to check
  * Return: Always 0.
  */
 int _strlen(char *s)
