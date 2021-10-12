@@ -7,7 +7,7 @@
  */
 void _puts(char *str)
 {
-char *str[100] = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+*str[100] = "I do not fear computers. I fear the lack of them - Isaac Asimov";
 {
 _puts(str);
 }
