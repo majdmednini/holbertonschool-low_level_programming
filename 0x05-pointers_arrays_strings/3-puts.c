@@ -6,10 +6,11 @@
  * Return: Always 0.
  */
 void _puts(char *str)
+{	
+*str = *z;	
+char *z[100] = "I do not fear computers. I fear the lack of them - Isaac Asimov";
 {
-*str[100] = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-{
-_puts(str);
+_puts(z);
 }
 return (0);
 }
