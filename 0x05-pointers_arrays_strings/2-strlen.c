@@ -8,5 +8,6 @@
  */
 int _strlen(char *s)
 {
+char *str = s
 printf("%d", strlen(s));
 }
