@@ -4,7 +4,7 @@
  * _strlen - check the code
  *@0: The character to check
  *@s: The character to check
- * Return: Always 0.
+ * Return: len (Success).
  */
 int _strlen(char *s)
 {
