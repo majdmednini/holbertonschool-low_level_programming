@@ -7,10 +7,7 @@
  */
 void _puts(char *str)
 {		
-char *z[100] = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-*str = *z;
-{
-_puts(z);
-}
-return (0);
+while (*str)
+_putchar(*str++);
+_putchar ('\n');
 }
