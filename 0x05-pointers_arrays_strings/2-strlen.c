@@ -2,7 +2,6 @@
 #include <stdio.h>
 /**
  * _strlen - check the code
- *@0: The character to check
  *@s: The character to check
  * Return: len (Success).
  */
