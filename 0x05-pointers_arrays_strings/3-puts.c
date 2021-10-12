@@ -6,9 +6,9 @@
  * Return: Always 0.
  */
 void _puts(char *str)
-{	
-*str = *z;	
+{		
 char *z[100] = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+*str = *z;
 {
 _puts(z);
 }
