@@ -9,10 +9,14 @@
  */
 int main(void)
 {
-char ch;
-for (ch = 'a' ; ch <= 'z' ; ch++ && ch = 'A' ; ch <= 'Z' ; ch++)
+char ch, c;
+for (ch = 'a' ; ch <= 'z'; ch++)
 {
 putchar(ch);
+}
+for (c = 'A' ; c <= 'Z' ; c++)
+{
+putchar(c);
 }
 putchar('\n');
 return (0);
