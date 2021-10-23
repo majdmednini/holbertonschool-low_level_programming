@@ -9,17 +9,10 @@
  */
 int main(void)
 {
-char ch,chh,c;
-for (ch = 'a' ; ch <= 'd' ; ch++)
+char ch;
+for (ch = 'a' ; ch <= 'z' ; ch++)
 {
-putchar(ch);
-}
-for (c = 'f' ; c <= 'p' ; c++)
-{
-putchar(ch);
-}
-for (chh = 'r' ; chh <= 'z' ; chh++)
-{
+if (ch != 'e' && ch != 'q')
 putchar(ch);
 }
 putchar('\n');
