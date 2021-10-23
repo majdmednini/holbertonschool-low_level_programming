@@ -10,10 +10,9 @@
 int main(void)
 {
 char ch;
-int i;
-for (i = 97; i <= 122; i++)
+for (ch = 'a' ; ch <= 'z' ; ch++)
 {
-putchar("%c\n", i);
+putchar(ch);
 }
 return 0;
 }
