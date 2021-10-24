@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-char c;
+char ch;
 int i = 0;
 while (i < 10)
 {
