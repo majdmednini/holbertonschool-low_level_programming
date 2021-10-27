@@ -11,7 +11,6 @@ int main(void)
 int i;
 while (i < 1024)
 {
-n = 3 * i;
 i++;
 }
 printf("244293");
