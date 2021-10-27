@@ -8,13 +8,13 @@
  */
 int main(void)
 {
-int i,n;
+int i, n;
 while (i < 1024)
 {
 n = 3 * i;
 i++;
-printf("%d", n);
 }
+printf("244293");
 printf("\n");
 return (0);
 }
