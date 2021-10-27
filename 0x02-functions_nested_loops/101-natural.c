@@ -2,7 +2,11 @@
 #include <stdio.h>
 /**
  * @n: integer
- * Return: returns nothing
+ * @i: integer
+ * @a: integer
+ * @b: integer
+ * @sum: integer
+ * Return: Always 0.
  */
 int main(void)
 {
