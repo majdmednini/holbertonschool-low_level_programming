@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-int i, n;
+int i;
 while (i < 1024)
 {
 n = 3 * i;
