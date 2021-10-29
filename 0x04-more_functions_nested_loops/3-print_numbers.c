@@ -2,8 +2,7 @@
 #include <stdio.h>
 /**
  * print_numbers - multiplies two integers
- *@i: integer
- * Return: Always 0.
+ * Return: 0 (success)
  */
 void print_numbers(void)
 {
