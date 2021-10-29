@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_numbers - multiplies two integers
  *@i: The character to check
@@ -9,8 +10,7 @@ void print_numbers(void)
 int i = 0;
 while (i < 10)
 {
-pritnf("%d", i);
+printf("%d", i);
 }
-_putchar("\n");
-return (0);
+_putchar(' ');
 }
