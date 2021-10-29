@@ -4,7 +4,7 @@
  *@i: The character to check
  * Return: Always 0.
  */
-void print_numbers(void);
+void print_numbers(void)
 {
 int i = 0;
 while (i < 10)
