@@ -7,10 +7,9 @@
 void print_numbers(void)
 {
 int i = 0;
-while (i < 10)
+for (i = 0; i <= 9; i++)
 {
-printf("%d", i);
-i++;
+_putchar((i % 10) + '0');
 }
 _putchar('\n');
 }
