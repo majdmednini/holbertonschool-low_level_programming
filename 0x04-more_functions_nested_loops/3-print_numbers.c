@@ -13,5 +13,5 @@ while (i < 10)
 printf("%d", i);
 i++;
 }
-_putchar(' ');
+_putchar('\n');
 }
