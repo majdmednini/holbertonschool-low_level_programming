@@ -1,10 +1,7 @@
 #include "main.h"
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
 /**
- * positive_or_negative - posit or nega
- * Return: Always 0.
+ * main - posit or nega
+ * Return: 0
  */
 int main(void)
 {
