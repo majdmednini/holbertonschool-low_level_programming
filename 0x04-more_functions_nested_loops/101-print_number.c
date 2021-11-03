@@ -1,0 +1,15 @@
+#include "main.h"
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+/**
+ * print_number - prints an integer
+ *@n : random int
+ * Return: Always 0.
+ */
+void print_number(int n)
+{
+srand(time(NULL));
+n = rand();
+_putchar((n % 10) + '0');
+}
