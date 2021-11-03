@@ -9,7 +9,5 @@
  */
 void print_number(int n)
 {
-srand(time(NULL));
-n = rand();
-_putchar((n % 10) + '0');
+return (0);
 }
