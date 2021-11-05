@@ -2,11 +2,11 @@
 #include <stdio.h>
 /**
  *_puts - check the code
- *@*str: The character to check
+ *@str: char
  *.
  */
 void _puts(char *str)
-{		
+{
 while (*str)
 _putchar(*str++);
 _putchar ('\n');
