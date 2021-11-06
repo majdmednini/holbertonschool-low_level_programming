@@ -3,7 +3,7 @@
 /**
  * print_rev - check the code
  *@s: char
- *
+ *_strlen - returns the length of a string
  */
 void print_rev(char *s)
 {
