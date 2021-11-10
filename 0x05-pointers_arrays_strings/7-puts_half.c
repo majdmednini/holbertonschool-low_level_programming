@@ -1,5 +1,4 @@
 #include "main.h"
-int _strlen(char *s);
 /**
  * puts_half - prints every other character of a string
  *@str: is a pointer to char and the parameter
