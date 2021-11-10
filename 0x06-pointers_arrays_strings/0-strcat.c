@@ -3,6 +3,7 @@
  * _strcat - prints every other character of a string
  *@dest: char
  *@src: char
+ * Return: dest
  */
 char *_strcat(char *dest, char *src)
 {
