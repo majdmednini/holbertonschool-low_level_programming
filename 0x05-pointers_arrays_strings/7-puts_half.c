@@ -9,9 +9,18 @@ void puts_half(char *str)
 {
 int i;
 int x = _strlen(str);
-for (i = 0; i < x; i += 2)
+if (x % 2 == 0)
+{
+for (i = x / 2; i < x; i++)
+_putchar(str[i]);
+_putchar('\n');
+}
+else
+{
+for (i = (x / 2) + 1; i < x; i++)
 _putchar(str[i]);
 _putchar ('\n');
+}
 }
 #include "main.h"
 /**
