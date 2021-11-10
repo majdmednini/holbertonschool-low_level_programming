@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * print_array - prints every other character of a string
- *@p: pointer
+ *@a: pointer
  *@n: integer
  */
 void print_array(int *a, int n)
