@@ -4,14 +4,22 @@
  *@dest: char
  *@src: char
  *@n: integer
- * Return: 0
+ * Return: dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-strncpy(dest, src, 98);
-for (int i = 0; i < ; i++)
+int i;
+i = 0;
+while (i < n && src[i] != '\0')
 {
-printf("%c", dest[i]);
+dest[i] = src[i];
+i++;
 }
-return (0);
+i = i;
+while (i < n)
+{
+dest[i] = '\0';
+i++;
+}
+return (dest);
 }
