@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * reverse_array - capitalizes all words of a string
+ * cap_string - capitalizes all words of a string
  *@str: char
  * Return: 0
  */
