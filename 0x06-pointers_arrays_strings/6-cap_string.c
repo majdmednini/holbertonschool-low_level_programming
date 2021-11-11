@@ -19,7 +19,7 @@ str[0] = str[0] - 32;
 }
 else
 {
-for (j < 13; j++)
+for (j < 13; j++;)
 {
 if (str[i - 1] == ch[j])
 str[i] = str[i] - 32;
