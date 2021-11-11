@@ -14,6 +14,10 @@ if (str[i] >= 97 && str[i] <= 122)
 {
 str[i] = str[i] - 32;
 }
+if (str[i] >= 0 && str[i] <= 96)
+{
+str[i] = str[i];
+}
 i++;
 }
 return (str);
