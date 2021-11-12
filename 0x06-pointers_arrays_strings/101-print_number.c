@@ -4,7 +4,7 @@
  *@n: integer
  * Return: int
  */
-void _number(int n)
+void print_number(int n)
 {
 if (n < 0)
 {
