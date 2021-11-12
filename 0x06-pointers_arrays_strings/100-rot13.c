@@ -1,18 +1,28 @@
 #include "main.h"
 /**
- * *rot13 - encodes a string using rot13
- *@str: string
- *@rot13: rot13
- * Return: s
+ *rot13 - encodes a string using rot13
+ *@str: string used
+ *
+ * Return: char
  */
-char *rot13(char *alpha *rot13)
+char *rot13(char *str)
 {
 int i, j;
-char alpha[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
-for (i = 0; s[i] != '\0'; i++)
+char alpha[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
+'m', 'n', 'o', 'p',
+'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E',
+'F', 'G', 'H',
+'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W',
+'X', 'Y', 'Z'};
+char rot13x[] = {'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
+'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd',
+'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'N', 'O', 'P', 'Q', 'R',
+'S', 'T', 'U', 'V',
+'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K',
+							'L', 'M'};
+for (i = 0; str[i] != '\0'; i++)
 for (j = 0; j < 52; j++)
-if (s[i] == alphabet[j])
-s[i] = rot_it[j], j = 52;
-return (s);
+if (str[i] == alpha[j])
+str[i] = rot13x[j], j = 52;
+return (str);
 }
