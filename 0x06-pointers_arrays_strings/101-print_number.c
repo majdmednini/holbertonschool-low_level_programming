@@ -5,6 +5,7 @@
  */
 void print_number(int n)
 {
+int d;
 if (n < 0)
 {
 _putchar('-');
@@ -12,7 +13,13 @@ n = -n;
 }
 else if (n == 0)
 _putchar('0');
-else if ((n / 10) > 10)
-print_number(n / 10);
-_putchar((n % 10) + '0');
+d = 1;
+while((n / d) < 9)
+d = d*10;
+while((n / 10) > 0)
+{
+_putchar(n / d);
+n = n % 10;
+d = d / 10;
+}
 }
