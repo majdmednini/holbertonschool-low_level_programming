@@ -1,10 +1,11 @@
 #include "main.h"
+char *_strchr(char *s, char c);
 /**
- * int _strspn - gets the length of a prefix substring
- *@s: char
- *@accept: char
- * Return: Always 0.
- */
+* _strspn -  gets the length of a prefix substring
+* @s: The null-terminated string to be scanned.
+* @accept: The null-terminated string containing the characters to match.
+* Return: n (success)
+*/
 unsigned int _strspn(char *s, char *accept)
 {
 unsigned int n = 0;
@@ -16,11 +17,12 @@ return (n);
 }
 #include "main.h"
 /**
- * int _strspn - gets the length of a prefix substring
- *@s: char
- *@c: char
- * Return: Always 0.
- */
+* _strchr - locates a character in a string
+* @s: string to be scaned
+* @c: the character to be searched in s
+* Return: A pointer to the first occuence of the character
+* or NULL if the character not found
+*/
 char *_strchr(char *s, char c)
 {
 int i;
