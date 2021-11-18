@@ -7,28 +7,14 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-unsigned int n = 0;
-while (*s && _strchr(accept, *s++))
+int i, n;
+for (i = 0; s[i] != '\0'; i++)
 {
-n++;
-}
-return (n);
-}
-#include "main.h"
-/**
-* _strchr - locates a character in a string
-* @s: string to be scaned
-* @c: the character to be searched in s
-* Return: A pointer to the first occuence of the character
-* or NULL if the character not found
-*/
-char *_strchr(char *s, char c)
+for (n = 0; accept[n] != '\0'; n++)
 {
-int i;
-for (i = 0; s[i] >= '\0'; i++)
-{
-if (s[i] == c)
+if (s[i] == accept[n])
 return (s + i);
+}
 }
 return ('\0');
 }
