@@ -7,13 +7,27 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-int count = 0;
-for (int i = 0; i < strlen(accept); i++)
+unsigned int n = 0;
+while (*s && _strchr(accept, *s++))
 {
-if (count == strlen(s))
-break;
-if (accept[i] == s[count])
-count++;
-} 
-return count;
+n++;
+}
+return (n);
+}
+#include "main.h"
+/**
+ * int _strspn - gets the length of a prefix substring
+ *@s: char
+ *@c: char
+ * Return: Always 0.
+ */
+char *_strchr(char *s, char c)
+{
+int i;
+for (i = 0; s[i] >= '\0'; i++)
+{
+if (s[i] == c)
+return (s + i);
+}
+return ('\0');
 }
