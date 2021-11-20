@@ -41,5 +41,5 @@ continue;
 cents--;
 }
 printf("%d\n", coins);
-return 0;
+return (0);
 }
