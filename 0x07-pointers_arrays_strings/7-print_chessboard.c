@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strpbrk - prints the chessboard
+ * print_chessboard - prints the chessboard
  * @a: char
  * Return: Always 0.
  */
