@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "main.h"
-
 int _atoi(char *s);
 /**
  * main - multiplies two numbers
