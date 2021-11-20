@@ -17,5 +17,7 @@ _putchar(*s);
  *@s: char
  * Return: Always 0.
  */
-void _print_rev_recursion(char *s)
+int is_palindrome(char *s)
 {
+return (is_palindrome(s, 1));
+}
