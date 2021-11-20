@@ -6,9 +6,10 @@
  */
 int is_prime_number(int n)
 {
-for (int i = 2; i < n; i++)
-if (n % i == 0)
+if (n == 1)
+return (0);
+else if ((n % 2) == 1)
 return (1);
-else 
-return (is_prime_number(n + 1) + 1);
+else
+return (0);
 }
