@@ -12,26 +12,20 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 int fd;
-char buf[14];
-/* WRITE */
-fd = open("myfile.txt", O_CREAT I O_WRONLY, 0600);
-if(fd == -1)
-{
-printf("Failed");
-exit(1);
-}
-write(fd, "Hello World!\n", 13);
-close(fd);
-/* READ */
-fd = open(myfile.txt", O_RDONLY);
-if(fd == -1)
-{
-printf("failed");
-exit(1);
-}
-read(fd, buf, 13);
-buf[13] = '\0';
-close(fd);
-printf("buf: %s\n", buf);
+char *buf = malloc(sizeof(char) * letters);
+ssize_t rl, rw;
+if (filename == NULL)
 return (0);
+fd = open(filename, O_RDWR);
+if (fd == -1)
+return (0);
+rl = read(fd, buf, letters);
+if (rl < 0)
+return (0);
+rw = write(STDOUT_FILENO, buf, rl);
+if (rw < 0)
+return (0);
+free(buf);
+close(fd);
+return (rw);
 }
