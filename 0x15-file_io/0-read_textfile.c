@@ -16,6 +16,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 char *buf = malloc(sizeof(char) * letters);
 int fd;
 ssize_t rl, rw;
+/* READ */
 if (filename == NULL)
 return (0);
 fd = open(filename, O_RDWR);
@@ -24,6 +25,7 @@ return (0);
 rl = read(fd, buf, letters);
 if (rl < 0)
 return (0);
+/* P0SIX */
 rw = write(STDOUT_FILENO, buf, rl);
 if (rw < 0)
 return (0);
