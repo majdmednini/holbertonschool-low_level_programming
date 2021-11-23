@@ -21,12 +21,12 @@ if (fd == -1)
 return (-1);
 if (text_content != NULL)
 {
-for (lenght= 0; text_content[lenght] != '\0'; lenght++)
+for (lenght = 0; text_content[lenght] != '\0'; lenght++)
 continue;
 wr = write(fd, text_content, lenght);
 if (wr == -1)
 return (-1);
 }
-close (fd);
+close(fd);
 return (1);
 }
