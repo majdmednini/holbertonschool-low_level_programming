@@ -13,23 +13,19 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-char buf;
-int fd;
-ssize_t rl, rw;
-/* READ */
-if (filename == NULL)
-return (0);
+int fd, rw, lenght = 0;
+if (filename == 0)
+return (-1);
 fd = open(filename, O_RDWR);
 if (fd == -1)
-return (0);
-rl = read(fd, buf, text_content);
-if (rl < 0)
-return (0);
-/* P0SIX */
-rw = write(STDOUT_FILENO, buf, rl);
-if (rw < 0)
-return (0);
-free(buf);
+return (-1);
+if (text_content ==  NULL)
+{
+while (text_content[lenght])
+lenght++;
+rw = write(fd, text_content, lenght);
+return (-1);
+}
 close(fd);
-return (rw);
+return (1);
 }
