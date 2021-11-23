@@ -19,11 +19,12 @@ return (-1);
 fd = open(filename, O_RDWR);
 if (fd == -1)
 return (-1);
-if (text_content ==  NULL)
+if (text_content !=  NULL)
 {
 while (text_content[lenght])
 lenght++;
 rw = write(fd, text_content, lenght);
+if (rw < 0)
 return (-1);
 }
 close(fd);
