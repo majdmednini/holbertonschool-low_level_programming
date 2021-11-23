@@ -1,4 +1,16 @@
-
+#include "main.h"
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <stdlib.h>
+#include <stddef.h>
+#include <fcntl.h>
+#include <unistd.h>
+/**
+ * create_file - creates a file.
+ *@filename: char
+ *@text_content: size_t
+ * Return: Always 0.
+ */
 int append_text_to_file(const char *filename, char *text_content)
 {
 int fd, wr, lenght;
