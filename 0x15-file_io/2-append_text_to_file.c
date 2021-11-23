@@ -6,9 +6,9 @@
 #include <fcntl.h>
 #include <unistd.h>
 /**
- * create_file - creates a file.
+ * append_text_to_file - appends text at the end of a file
  *@filename: char
- *@text_content: size_t
+ *@text_content: char
  * Return: Always 0.
  */
 int append_text_to_file(const char *filename, char *text_content)
