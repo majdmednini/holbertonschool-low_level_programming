@@ -13,7 +13,7 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-char *buf = malloc(sizeof(char) * text_content);
+char buf;
 int fd;
 ssize_t rl, rw;
 /* READ */
