@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * create_array - creates an array of chars, and initializes it
  *@c: char
@@ -23,4 +24,5 @@ for (i = 0; i <= size; i++)
 p[i] = c;
 }
 return (p);
+}
 }
