@@ -12,14 +12,14 @@ return;
 
 
 if (d->name == NULL)
-	printf("Name: %s\n", "NULL");
+	printf("Name: %p\n", d->name);
 else
 {
 	printf("Name: %s\n", d->name);
 	printf("Age: %.6f\n", d->age);
 }
 if (d->owner == NULL)
-	printf("Owner: %s\n", "NULL");
+	printf("Owner: %p\n", d->owner);
 else
 {
 	printf("Owner: %s\n", d->owner);
