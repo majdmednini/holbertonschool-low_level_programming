@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef SIZE_H
+#define SIZE_H
 
 
 
