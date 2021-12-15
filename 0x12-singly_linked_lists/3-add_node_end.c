@@ -4,10 +4,10 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * add_node_end - function that adds a new node at the end of a list_t list
+ * add_node_end - function that adds a new node at the end of a list_t list.
  *@head: list_t pointer to a structure node
  *@str: constant pointer to a string
- * Return: 0
+ * Return: the new node
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
@@ -32,6 +32,7 @@ if (*head == NULL)
 *head = new_node;
 }
 else
+{
 while (curr->next != NULL)
 {
 curr = curr->next;
