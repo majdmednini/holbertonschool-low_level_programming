@@ -1,10 +1,10 @@
 #include "dog.h"
 #include <stdlib.h>
 /**
- * * _strlen -returns the length of a string
- * * @s: char
- * * Return: 0
- * */
+ * _strlen -returns the length of a string
+ *@s: char
+ * Return: 0
+ */
 int _strlen(char *s)
 {
 	int i;
@@ -13,12 +13,11 @@ int _strlen(char *s)
 	return (i);
 }
 /**
- *  * _strcpy - copy the string
- *   * @dest: array that returns
- *    * @src: the pointer that receive the string
- *     *
- *      * Return: the parameter dest.
- *       */
+ * _strcpy - copy the string
+ *@dest: array that returns
+ *@src: the pointer that receive the string
+ * Return: 0
+ */
 char *_strcpy(char *dest, char *src)
 {
 	int n = 0;
@@ -42,12 +41,12 @@ char *_strcpy(char *dest, char *src)
 	return (dest);
 }
 /**
- *  * new_dog - init new dog
- *   * @name: name
- *    * @age: age
- *     * @owner: owner
- *      * Return: 0
- *       */
+ * new_dog - init new dog
+ *@name: name
+ *@age: age
+ *@owner: owner
+ * Return: 0
+ */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *d;
