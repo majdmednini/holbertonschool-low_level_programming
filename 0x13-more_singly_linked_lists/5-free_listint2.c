@@ -14,6 +14,7 @@ return;
 while (*head != NULL)
 {
 aux = *head;
+*head = (*head)->next;
 free(aux);
 }
 head = NULL;
