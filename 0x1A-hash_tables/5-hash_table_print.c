@@ -2,7 +2,7 @@
 
 /**
  * hash_table_print - function that prints a hash table
- *@ht: the hash table
+ * @ht: the hash table
  * Return: a dictionary format of the hash table
  */
 void hash_table_print(const hash_table_t *ht)
@@ -21,7 +21,7 @@ void hash_table_print(const hash_table_t *ht)
 		{
 			printf("'%s' : '%s'", temp->key, temp->value);
 			if (ht->array[i + 1] == NULL)
-				return;
+				break;
 			printf(", ");
 			temp = temp->next;
 		}
